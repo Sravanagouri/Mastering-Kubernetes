@@ -35,11 +35,11 @@ spec:
   selector:
     matchLabels:
       app: app2
-template:
-  metadata:
+  template:
+   metadata:
     labels:
       app: app2
-  spec:
+   spec:
     containers:
       - image: nginx:latest
         name: nginx
