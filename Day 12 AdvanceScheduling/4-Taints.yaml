@@ -21,7 +21,7 @@ template:
       - key: "high-cpu"
         operator: "Equal"
         value: "yes"
-        effect: "NoExecute"
+        effect: "NoSchedule"
 
 ---
 apiVersion: apps/v1
