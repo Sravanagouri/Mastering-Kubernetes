@@ -43,4 +43,5 @@ kops create cluster --name=cloudvishwakarma.in \
 kops create -f cluster.yml
 kops update cluster --name cloudvishwakarma.in --yes --admin
 kops validate cluster --wait 10m
+export KOPS_STATE_STORE=s3://gouricloudsols.xyz
 kops delete -f cluster.yml  --yes
