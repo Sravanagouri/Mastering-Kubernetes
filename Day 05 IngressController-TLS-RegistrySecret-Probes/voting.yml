@@ -219,3 +219,13 @@ spec:
         name: worker
       imagePullSecrets:
       - name: docker-pwd
+
+      
+      sudo snap install --classic certbot
+      certbot certonly --manual --preferred-challenges=dns --key-type rsa \
+    --email sgk08511@gmail.com --server https://acme-v02.api.letsencrypt.org/directory \
+    --agree-tos -d "*.gouricloudsols.xyz"
+    
+	ingress contoller link to install
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.6/deploy/static/provider/cloud/deploy.yaml
+
