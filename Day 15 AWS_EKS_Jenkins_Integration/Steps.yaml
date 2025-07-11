@@ -48,6 +48,7 @@ sudo apt install -y openjdk-11-jdk
 
 #Once Cluster is up 
 export KUBECONFIG=/root/.kube/config
+aws eks update-kubeconfig --region us-east-1 --name eks-cluster-1
 
 # check cluster-info
 
